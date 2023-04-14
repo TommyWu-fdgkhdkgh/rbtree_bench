@@ -16,6 +16,11 @@ void swap(int *x, int *y)
 
 enum { NNODES = 30 };
 
+static int uint_key_cmp(const void *a, const void *b)
+{
+    return 0;
+}
+
 bool test_mix_insert()
 {
     bool failed = false;

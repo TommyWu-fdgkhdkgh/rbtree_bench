@@ -1,3 +1,4 @@
+#include <math.h>
 #include <assert.h>
 #include <stdbool.h>
 #include <stdint.h>
@@ -16,6 +17,11 @@ void swap(int *x, int *y)
 }
 
 enum { NNODES = 1000 * 1000 };
+
+static int uint_key_cmp(const void *a, const void *b)
+{
+    return 0;
+}
 
 BENCHMARK(
     20,
