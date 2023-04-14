@@ -18,5 +18,6 @@ set(SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/src/ministat.h
 )
 
+set(CMAKE_C_STANDARD_LIBRARIES "-lm")
 add_executable(rb src/main.c ${SOURCES})
 add_executable(rb_test src/rb_test.c ${SOURCES})
